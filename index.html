@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Superset at a glance</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			.reveal .slides {
+				text-align: left;
+			}
+			.reveal .slides .center {
+				text-align: center;
+			}
+			.reveal section img {
+				border: none;
+			}
+			.reveal section img.small {
+				margin-left: 0.6rem;
+				width: 2.6rem;
+				margin-bottom: -3px;
+			}
+			.reveal h2.gif {
+				font-size: 1.45em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Superset at a glance</h2>
+					<br /><br />
+					<h3>Data Beers Torino</h3>
+					<h4>Riccardo Magliocchetti</h4>
+				</section>
+				<section>
+					<h2>whoami</h2>
+					<ul>
+						<li>Sw developer @ Maieutical Labs</li>
+						<li>Consultant</li>
+						<li><a href="https://twitter.com/rmistaken">@rmistaken</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Superset WAT?</h2>
+					<p>An open source, platform created and developed by <a href="http://airbnb.io">Airbnb</a> for:</p>
+					<ul>
+						<li>data exploration</li>
+						<li>data visualization</li>
+						<li>dashboard creations and sharing</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Concepts</h2>
+					<ul>
+						<li>Database</li>
+						<li>Slice</li>
+						<li>Dashboard</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Database</h2>
+					<ul>
+						<li>PostgreSQL, MySQL, SQLite</li>
+						<li>SQL Server, Oracle</li>
+						<li>Redshift, Vertica</li>
+						<li>Presto, Impala, SparkSQL</li>
+						<li>ClickHouse (WIP)</li>
+                        <li>Druid</li>
+					</ul>
+				</section>
+				<section class="center">
+					<h2 class="gif">Slice</h2>
+					<a href="https://cloud.githubusercontent.com/assets/130878/20372732/410392f4-ac22-11e6-9c6d-3ef512e81212.gif"><img src="assets/410392f4-ac22-11e6-9c6d-3ef512e81212.gif" /></a>
+				</section>
+				<section class="center">
+					<h2 class="gif">Dashboards</h2>
+					<a href="https://cloud.githubusercontent.com/assets/130878/20371438/a703a2a0-ac19-11e6-80c4-00a47c2eb644.gif"><img src="assets/a703a2a0-ac19-11e6-80c4-00a47c2eb644.gif" /></a>
+				</section>
+				<section>
+					<h2>Batteries included</h2>
+					<ul>
+						<li>Authentication and authorization</li>
+						<li>SQL Lab</li>
+					</ul>
+				</section>
+				<section class="center">
+					<h2 class="gif">SQL Lab</h2>
+					<a href="https://cloud.githubusercontent.com/assets/130878/20372911/7c3b3358-ac23-11e6-8f24-923ef1b35715.gif"><img src="assets/7c3b3358-ac23-11e6-8f24-923ef1b35715.gif" /></a>
+				</section>
+				<section>
+					<h2>Hackable</h2>
+					<ul>
+						<li>Python</li>
+						<li>Flask</li>
+						<li>React</li>
+                        <li>D3.js</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Conclusions</h2>
+					<ul>
+						<li>open source and <strong>maintained</strong> by a <strong>team</strong></li>
+						<li><strong>codeless</strong> data exploration, viz and collaboration</li>
+						<li>lot of features and still hackable</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Thanks!</h2>
+					<ul>
+						<li><a href="https://twitter.com/rmistaken">@rmistaken</a></li>
+						<li><a href="https://github.com/xrmx">github.com/xrmx</a></li>
+						<li><a href="https://speakerdeck.com/xrmx">speakerdeck.com/xrmx</a></li>
+						<li><a href="http://menodizero.it">menodizero.it</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="http://airbnb.io/superset">Documentation</a></li>
+						<li><a href="https://github.com/airbnb/superset">Source code</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
